@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My site</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="header_logo">
+          <img class="logo_img" src="./Img/logo.png" alt="" />
+        </div>
+        <ul class="header_ul_item" onclick="addStyle()">
+          <li><a href="#main_fon"> ГОЛОВНА</a></li>
+          <li><a href="#info">ПРО НАС</a></li>
+          <li><a href="#team_barber">НАША КОМАНДА</a></li>
+          <li><a href="#box_price">ПРАЙС</a></li>
+          <li><a href="#container_for_contact">КОНТАКТИ</a></li>
+        </ul>
+        <div class="burger-menu">
+          <input id="menu-toggle" type="checkbox" />
+          <label class="menu-btn" for="menu-toggle">
+            <span></span>
+          </label>
+          <ul class="menu-box">
+            <li><a class="menu-list" href="#">ГОЛОВНА</a></li>
+            <li><a class="menu-list" href="#">ПРО НАС</a></li>
+            <li><a class="menu-list" href="#">НАША КОМАНДА</a></li>
+            <li><a class="menu-list" href="#">ПРАЙС</a></li>
+            <li><a class="menu-list" href="#">КОНТАКТИ</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="main_fon"></div>
+      <div class="main">
+        <img class="logo_in_main" src="./Img/logoo.png" alt="" />
+        <h2 class="main-title">Тут не просто стрижуть волосся.</h2>
+        <h2 class="main-title">Тут створюють стиль.</h2>
+        <button class="main_btn">ОНЛАЙН ЗАПИС</button>
+      </div>
+    </main>
+    <div class="contact">
+      <div class="adresse">
+        <h3>АДРЕСА</h3>
+        <h2>м.Київ</h2>
+      </div>
+      <div class="phone">
+        <h3>ТЕЛЕФОН</h3>
+        <h2>+380960000000</h2>
+      </div>
+      <div class="working_hours">
+        <h3>ЧАС РОБОТИ</h3>
+        <h2>ЩОДЕННО З 10:00 ДО 21:00</h2>
+      </div>
+    </div>
+    <div id="info">
+      <div class="photo">
+        <img class="photo_img" src="./Img/barbershop.jpg" alt="" />
+      </div>
+      <div class="info_text">
+        <img src="./Img/The Barbershop.png" alt="" />
+        <h4>
+          Барбершоп - це справжній джентельменський клуб зі своєю культурою і
+          атмосферою.
+        </h4>
+        <p>
+          Стрижка в барбершопі - це ціле мистецтво, особливий ритуал, який
+          проводять з вами наші майстри, щоб підкреслити вашу індивідуальність.
+          Чому сучасному чоловікові слід записатися в барбершоп на стрижку? Тому
+          що для кожного нашого відвідувача ми ставимося як до почесного гостя,
+          незалежно від роду діяльності або соціального статусу. На відміну від
+          звичайної перукарні з чоловічим залом, наш барбершоп на Чорновола - це
+          місце, де створюють не тільки стиль, а й настрій. Побувавши у нас
+          вперше, ви неодмінно захочете знову повернутися сюди!
+        </p>
+        <button class="main_btn">ОНЛАЙН ЗАПИС</button>
+      </div>
+    </div>
+    <div id="team_barber">
+      <h1>Наша команда</h1>
+      <div class="container_card">
+        <div class="card">
+          <img src="./Img/barber.png" alt="" />
+          <div class="container_text_card">
+            <h2>Іван</h2>
+            <button class="card_btn">Записатись</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./Img/barber.png" alt="" />
+          <div class="container_text_card">
+            <h2>Микола</h2>
+            <button class="card_btn">Записатись</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./Img/barber.png" alt="" />
+          <div class="container_text_card">
+            <h2>Денис</h2>
+            <button class="card_btn">Записатись</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./Img/barber.png" alt="" />
+          <div class="container_text_card">
+            <h2>Денис</h2>
+            <button class="card_btn">Записатись</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="box_price">
+      <div class="price">
+        <h1>ПРАЙС ЛИСТ</h1>
+        <div class="container_text">
+          <div class="price_text">
+            <div>
+              <p>Стрижка</p>
+              <p>Стрижка ножицями подовжена</p>
+              <p>Стрижка машинкою</p>
+              <p>Дитяча стрижка</p>
+              <p>Гоління голови</p>
+            </div>
+            <div class="price1">
+              <p>550$</p>
+              <p>650$</p>
+              <p>400$</p>
+              <p>450$</p>
+              <p>500$</p>
+            </div>
+          </div>
+          <div class="price_text1">
+            <div>
+              <p>Суха стрижка бороди</p>
+              <p>Волога стрижка бороди</p>
+              <p>Камуфлювання бороди</p>
+              <p>Комплекс "батько + син"</p>
+              <p>Комплекс "стрижка + борода"</p>
+            </div>
+            <div class="price1">
+              <p>350$</p>
+              <p>400$</p>
+              <p>450$</p>
+              <p>800$</p>
+              <p>750$</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="container_for_contact">
+      <div class="container_two">
+        <div class="contact_text">
+          <h1>КОНТАКТИ</h1>
+          <h2>Режим роботи:</h2>
+          <p>Щоденно з 10.00 до 22.00</p>
+          <h2>Адрес:</h2>
+          <p>м.Київ</p>
+          <h2>Телефон:</h2>
+          <p>+380960000000</p>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.1435607481108!2d30.444981196745797!3d50.47316849414444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cdb7bdd717b3%3A0x4e33b683721027c8!2z0LLRg9C70LjRhtGPINCp0YPRgdGU0LLQsCwgOCwg0JrQuNGX0LIsIDAyMDAw!5e1!3m2!1suk!2sua!4v1700732857471!5m2!1suk!2sua"
+            width="757"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="social-networks">
+        <div>
+          <img src="./Img/instagram.svg" alt="" />
+          <img src="./Img/facebook.svg" alt="" />
+        </div>
+        <div>
+          <p>© 2023 BARBERSHOP</p>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
