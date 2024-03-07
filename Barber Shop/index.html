@@ -25,12 +25,12 @@
         <div class="header_logo">
           <img class="logo_img" src="./Img/logo.png" alt="" />
         </div>
-        <ul class="header_ul_item" onclick="addStyle()">
-          <li><a href="#main_fon"> ГОЛОВНА</a></li>
-          <li><a href="#info">ПРО НАС</a></li>
-          <li><a href="#team_barber">НАША КОМАНДА</a></li>
-          <li><a href="#box_price">ПРАЙС</a></li>
-          <li><a href="#container_for_contact">КОНТАКТИ</a></li>
+        <ul class="header_ul_item">
+          <li><a href="#main_fon" class="navi"> ГОЛОВНА</a></li>
+          <li><a href="#info" class="navi">ПРО НАС</a></li>
+          <li><a href="#team_barber" class="navi">НАША КОМАНДА</a></li>
+          <li><a href="#box_price" class="navi">ПРАЙС</a></li>
+          <li><a href="#container_for_contact" class="navi">КОНТАКТИ</a></li>
         </ul>
         <div class="burger-menu">
           <input id="menu-toggle" type="checkbox" />
@@ -51,9 +51,12 @@
       <div id="main_fon"></div>
       <div class="main">
         <img class="logo_in_main" src="./Img/logoo.png" alt="" />
-        <h2 class="main-title">Тут не просто стрижуть волосся.</h2>
-        <h2 class="main-title">Тут створюють стиль.</h2>
-        <button class="main_btn">ОНЛАЙН ЗАПИС</button>
+        <div class="animated-text">
+          <h2 class="main-title">Тут не просто стрижуть волосся.</h2>
+          <h1>Тут створюють стиль.</h1>
+        </div>
+        <button class="main_btn_1 btn">ОНЛАЙН ЗАПИС</button>
+        <div class="border_btn"></div>
       </div>
     </main>
     <div class="contact">
@@ -90,7 +93,7 @@
           місце, де створюють не тільки стиль, а й настрій. Побувавши у нас
           вперше, ви неодмінно захочете знову повернутися сюди!
         </p>
-        <button class="main_btn">ОНЛАЙН ЗАПИС</button>
+        <button class="main_btn btn">ОНЛАЙН ЗАПИС</button>
       </div>
     </div>
     <div id="team_barber">
@@ -100,28 +103,28 @@
           <img src="./Img/barber.png" alt="" />
           <div class="container_text_card">
             <h2>Іван</h2>
-            <button class="card_btn">Записатись</button>
+            <button class="card_btn btn">Записатись</button>
           </div>
         </div>
         <div class="card">
           <img src="./Img/barber.png" alt="" />
           <div class="container_text_card">
             <h2>Микола</h2>
-            <button class="card_btn">Записатись</button>
+            <button class="card_btn btn">Записатись</button>
           </div>
         </div>
         <div class="card">
           <img src="./Img/barber.png" alt="" />
           <div class="container_text_card">
             <h2>Денис</h2>
-            <button class="card_btn">Записатись</button>
+            <button class="card_btn btn">Записатись</button>
           </div>
         </div>
         <div class="card">
           <img src="./Img/barber.png" alt="" />
           <div class="container_text_card">
             <h2>Денис</h2>
-            <button class="card_btn">Записатись</button>
+            <button class="card_btn btn">Записатись</button>
           </div>
         </div>
       </div>
@@ -189,6 +192,95 @@
         </div>
       </div>
     </div>
+
+    <form class="form">
+      <fieldset>
+        <div class="close">
+          <span class="line_1"></span>
+          <span class="line_2"></span>
+        </div>
+        <h2 class="form-title">Заповніть форму і ми з вами зв'яжемося</h2>
+        <div class="vector-title"></div>
+        <div class="form-group form-FirstName">
+          <input
+            placeholder="Ім'я"
+            class="form-control"
+            type="text"
+            id="firstName"
+            required
+          />
+          <div class="error"></div>
+        </div>
+        <div class="form-group form-LastName">
+          <input
+            placeholder="Прізвище"
+            class="form-control"
+            type="text"
+            id="lastName"
+            required
+          />
+          <div class="error"></div>
+        </div>
+        <div class="form-group form-email">
+          <input
+            placeholder="Email"
+            class="form-control"
+            type="text"
+            id="email"
+            required
+          />
+          <div class="error"></div>
+        </div>
+        <div class="form-group form-phone">
+          <input
+            placeholder="Телефон"
+            class="form-control"
+            type="text"
+            id="phone"
+            required
+          />
+          <div class="error"></div>
+        </div>
+
+        <textarea placeholder="Коментарі..." name="text"></textarea><br />
+        <div class="form_item">
+          <div class="form_label">Прикріпити фото</div>
+          <div class="file">
+            <div class="file_item">
+              <input
+                id="formImg"
+                accept=".jpeg, .png, .gif"
+                type="file"
+                name="image"
+                class="file_input"
+              />
+              <div class="file_btn">Вибрати</div>
+            </div>
+            <div id="formPreview" class="file_preview"></div>
+          </div>
+        </div>
+        <div class="form_item">
+          <div class="checkbox">
+            <input
+              id="formAgreement"
+              type="checkbox"
+              name="agreement"
+              class="checkbox_input"
+            />
+            <label for="formAgreement" class="checkbox_label"
+              ><span
+                >Я даю згоду на обробку своїх персональних даних згідно з
+                <a href="">Умовами</a></span
+              ></label
+            >
+          </div>
+        </div>
+        <button id="form-btn" class="form-btn" disabled>
+          Відправити Форму
+        </button>
+      </fieldset>
+    </form>
+
     <footer>
       <div class="social-networks">
         <div>
@@ -200,6 +292,7 @@
         </div>
       </div>
     </footer>
+
     <script src="index.js"></script>
   </body>
 </html>
